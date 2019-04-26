@@ -1,0 +1,290 @@
+<html>
+
+<head>
+    <style>
+        input {
+            color: white;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            line-height: 1.5em;
+            font-family: Verdana, Arial, san-serif;
+            font-size: 15px;
+            color: #ffffff;
+            background: #4b4743;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+        
+        #datatable {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        #datatable td,
+        #datatable th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        
+         ::placeholder {
+            color: white;
+        }
+        
+        #datatable tr:nth-child(even) {
+            background-color: #6e6b68;
+        }
+        
+        #datatable tr:hover {
+            background-color: #0f0e0d
+        }
+        
+        #datatable th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        a:link,
+        a:visited {
+            color: #e6e154;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a:active,
+        a:hover {
+            color: #e6e154;
+            text-decoration: underline;
+        }
+        
+        p {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        img {
+            margin: 0px;
+            padding: 0px;
+            border: none;
+            width: 150px;
+            height: 200px;
+        }
+        
+        .topnav {
+            overflow: hidden;
+            background-color: orange;
+        }
+        
+        #about {
+            color: white;
+        }
+        /* Style the links inside the navigation bar */
+        
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        
+        .topnav p {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        /* Change the color of links on hover */
+        
+        .topnav a:hover {
+            background-color: blue;
+            color: white;
+        }
+        /* Style the "active" element to highlight the current page */
+        
+        .topnav a.active {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <svg height="130" width="500">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%"
+          style="stop-color:rgb(7,13,96);stop-opacity:1" />
+          <stop offset="100%"
+          style="stop-color:rgb(40,149,211);stop-opacity:1" />
+        </linearGradient>
+      </defs>
+      <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)"/>
+      <text fill="orange" font-size="45" font-family="Verdana" 
+      x="50" y="86">BookManiac!!</text>
+    </svg>
+    <br>
+    <br>
+    <div class="topnav">
+
+
+
+        <a href="/accounts/" style="float:right;"><b><u>Back home</u></b></a>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <script>
+        var names = localStorage.Book_Name;
+        names = names + "!";
+        var quantity = localStorage.Quantity;
+        quantity = quantity + "!";
+        var price = localStorage.Price;
+        price = price + "!";
+        var t = "";
+        var q = "";
+        var p = "";
+        var n = "";
+        var an = [];
+        var ap = [];
+        var aq = [];
+        if (names) {
+            for (var i = 0; i < names.length; i++) {
+
+                if (i >= 5) {
+                    n = n + names[i];
+
+                }
+
+            }
+
+            console.log(n);
+            for (var i = 0; i < n.length; i++) {
+                var t = t + n[i];
+                if (n[i] == "!") {
+                    t = t.replace("!", "");
+                    an.push(t);
+                    t = "";
+
+                }
+
+            }
+            console.log(an);
+            for (var i = 0; i < quantity.length; i++) {
+
+                if (i >= 5) {
+                    q = q + quantity[i];
+
+                }
+
+            }
+
+
+            for (var i = 0; i < q.length; i++) {
+                var t = t + q[i];
+                if (q[i] == "!") {
+                    t = t.replace("!", "");
+                    aq.push(t);
+                    t = "";
+
+                }
+
+            }
+
+            for (var i = 0; i < price.length; i++) {
+
+                if (i >= 5) {
+                    p = p + price[i];
+
+                }
+
+            }
+
+
+            for (var i = 0; i < p.length; i++) {
+                var t = t + p[i];
+                if (p[i] == "!") {
+                    t = t.replace("!", "");
+                    ap.push(t);
+                    t = "";
+
+                }
+
+            }
+        }
+        var at = [];
+        var min = "1";
+        var max = "100";
+
+        var myTable = "<table id='datatable'><tr><th >Book Name</th>";
+
+        myTable += "<th >Unit Price</th>";
+        myTable += "<th>Quanity</th>";
+
+        myTable += "<th>Total Price</th></tr>";
+
+
+
+
+        for (var i = 0; i < an.length; i++) {
+            var tp = parseInt(aq[i]) * parseInt(ap[i]);
+
+            var sp = tp + "";
+
+            at.push(sp);
+
+
+
+            myTable += "<td>" + an[i] + "</td>";
+
+            myTable += "<td>" + ap[i] + "</td>";
+
+            myTable += "<td>" + aq[i] + "</td>";
+            myTable += "<td>" + sp + "</td></tr>";
+
+
+        }
+        var totalprice = 0;
+        for (var i = 0; i < ap.length; i++) {
+            totalprice = totalprice + (parseInt(ap[i]) * parseInt(aq[i]));
+
+        }
+
+
+
+        localStorage.setItem("TotalPrice", totalprice);
+        myTable += "<tr><td colspan='6'>total price:" + totalprice + "</td></tr>"
+        myTable += "</table>";
+        document.write(myTable);
+    </script>
+    <br>
+    <br>
+    <div class="topnav">
+
+
+        <a href="payment.html"><b><u>Confirm Payment</u></b></a>
+
+    </div>
+    <br>
+    <br>
+</body>
+
+</html>

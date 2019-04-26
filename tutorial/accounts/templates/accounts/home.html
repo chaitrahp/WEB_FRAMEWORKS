@@ -1,0 +1,16 @@
+ {% extends 'base.html' %}
+<h1>Home</h1>
+{% block head %}
+<title>Home</title>
+{% endblock %} {% block body%}
+<div class="container">
+
+
+    <h2><a href="{% url 'action' %}">Action & adventure </a> </h2>
+    <h2><a href="{% url 'education' %}">Education </a> </h2>
+    <h2><a href="{% url 'history' %}">History </a> </h2>
+    <h2><a href="{% url 'drama' %}">Drama & Biography </a> </h2>
+    <h2><a href="{% url 'fiction' %}">Fiction & Comic </a> </h2>
+</div>
+
+{% endblock %}

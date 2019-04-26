@@ -1,0 +1,597 @@
+{% load static %}
+
+<html>
+
+<head>
+    <link href="{% static 'accounts/templatemo_style.css'%}" rel="stylesheet" type="text/css" />
+
+    <script src="{% static 'accounts/jslink.js' %}">
+    </script>
+</head>
+
+<body>
+
+    <svg height="130" width="500">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"
+      style="stop-color:rgb(7,13,96);stop-opacity:1" />
+      <stop offset="100%"
+      style="stop-color:rgb(40,149,211);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)"/>
+  <text fill="orange" font-size="45" font-family="Verdana" 
+  x="50" y="86">BookManiac!!</text>
+</svg>
+    <br>
+    <br>
+
+    <div class="topnav">
+
+        <p><b><i>Category:Drama & Biographies</b></i>
+        </p>
+
+        <a href="1.html" style="float:right;"><u>Back home</u></a>
+        <a href="{% url 'cart' %}" style="float:right;"><u>Cart</u></a>
+    </div>
+
+
+
+    <div id="templatemo_content_right">
+        <div class="cleaner_with_width">&nbsp;</div>
+
+        <div class="cleaner_with_height">&nbsp;</div>
+
+
+
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Dork Diaries</h1>
+            <img src="{% static 'accounts/d1.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>By Rachel Renee Russell <br>language:English</p>
+                <h3>Price:Rs 309</h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Drama in Language</h1>
+            <img src="{% static 'accounts/d2.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>By Indrani Barua<br>language:English</p>
+                <h3>Price:Rs 74 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">King Lear</h1>
+            <img src="{% static 'accounts/D3.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>By author:William Shakespeare<br>language:Hindi</p>
+                <h3>Price:Rs 350</h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_height">&nbsp;</div>
+
+
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Vaishik</h1>
+            <img src="{% static 'accounts/d4.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>By author: P Medini Hombal<br>language: hindi</p>
+                <h3>Price:Rs 295 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Fantastic Beasts</h1>
+            <img src="{% static 'accounts/d5.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>By author:by J.K. Rowling
+                    <br>language: english</p>
+                <h3>Price:Rs 412</h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">The Secret</h1>
+            <img src="{% static 'accounts/d6.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>By Rhonda Byrne<br>language: kanada</p>
+                <h3>Price:Rs 249 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_height">&nbsp;</div>
+
+
+        <div class="templatemo_product_box">
+            <h1 class="hhh1">The Power of Mind</h1>
+
+            <img src="{% static 'accounts/d7.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by Joseph Murphy (Author)<br>language: kanada</p>
+                <h3>Price:Rs 189 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">The Last Lecture</h1>
+            <img src="{% static 'accounts/d8.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>
+                    by Randy Pausch <br>language:english</p>
+                <h3>Price:Rs 494</h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Indian Drama</h1>
+            <img src="{% static 'accounts/d9.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>y Chakraborty<br>language: english</p>
+                <h3>Price:Rs 1092 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_height">&nbsp;</div>
+
+
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Beralge Koral</h1>
+            <img src="{% static 'accounts/d10.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by M.K. Jayalakshmi<br>language: kanada</p>
+                <h3>Price:Rs 137 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Prerak Prasang</h1>
+            <img src="{% static 'accounts/d11.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>ry Sukdev Prasad (Aut<br>language: hindi</p>
+                <h3>Price:Rs 174 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Kuvempu</h1>
+            <img src="{% static 'accounts/d12.jpg' %}" alt="image" />
+            <div class="product_info">
+                <pby Kuvempu<br>language: kanada</p>
+                    <h3>Price:Rs 524 </h3>
+                    <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                    <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_height">&nbsp;</div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">adhyaapak - Saamajik</h1>
+            <img src="{% static 'accounts/d13.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by laxmanrao<br>language: hindi</p>
+                <h3>Price:Rs 125 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">The Stranger</h1>
+            <img src="{% static 'accounts/d14.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by albertcamus
+                    <brlenglish</p>
+                        <h3>Price:Rs 860</h3>
+                        <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                        <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">The Fire and the Rain</h1>
+            <img src="{% static 'accounts/d15.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by garnad girish<br>language: kanada</p>
+                <h3>Price:Rs 1209 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_height">&nbsp;</div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1"> A Science Fiction</h1>
+            <img src="{% static 'accounts/d16.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by y Sharad Asthana<br>language: hindi</p>
+                <h3>Price:Rs 800 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Princess and Superstar</h1>
+            <img src="{% static 'accounts/d17.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>byPreethi Venugopala
+                    <br>language:english</p>
+                <h3>Price:Rs 820</h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Dork Diaries part 2</h1>
+            <img src="{% static 'accounts/d18.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by y Rachel Ranee Russel<br>language: kanada</p>
+                <h3>Price:Rs 518 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_height">&nbsp;</div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Search of Lost Time</h1>
+            <img src="{% static 'accounts/d19.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by Marcel Proust<br>language: english</p>
+                <h3>Price:Rs 667 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Experiments with truth</h1>
+            <img src="{% static 'accounts/d20.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by MK Gandhi<br>language: english</p>
+                <h3>Price:Rs 148 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Wings of fire</h1>
+            <img src="{% static 'accounts/d21.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by APJ Abdul Kalam<br>language: english</p>
+                <h3>Price:Rs 256 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_height">&nbsp;</div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Steve Jobs</h1>
+            <img src="{% static 'accounts/d22.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by Walter Issacson<br>language: english</p>
+                <h3>Price:Rs 336 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Experiments with truth</h1>
+            <img src="{% static 'accounts/d23.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by MK Gandhi<br>language: english</p>
+                <h3>Price:Rs 148 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Buddha brothel</h1>
+            <img src="{% static 'accounts/d24.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by Kris Adavya<br>language: english</p>
+                <h3>Price:Rs 239 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_height">&nbsp;</div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Chattrapathi Sambhaji</h1>
+            <img src="{% static 'accounts/d25.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by Jaysingh roa<br>language: hindi</p>
+                <h3>Price:Rs 117 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Hotha cover</h1>
+            <img src="{% static 'accounts/d26.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by Maruti<br>language:hindi</p>
+                <h3>Price:Rs 220 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Mi Varnasi</h1>
+            <img src="{% static 'accounts/d27.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by Sndhuthai Sapt<br>language:hindi</p>
+                <h3>Price:Rs 145 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_height">&nbsp;</div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Yogi</h1>
+            <img src="{% static 'accounts/d28.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by Yoganand<br>language:english</p>
+                <h3>Price:Rs 110 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">I am Malala</h1>
+            <img src="{% static 'accounts/d29.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by Malala Yousafzai<br>language:english</p>
+                <h3>Price:Rs 194 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">AR RAHMAN</h1>
+            <img src="{% static 'accounts/d30.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by Krishna Tilok<br>language:English</p>
+                <h3>Price:Rs 499 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_height">&nbsp;</div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Suswarlakshmi Subbulakshmi</h1>
+            <img src="{% static 'accounts/d31.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by JayaPrakash Narayana<br>language:kannada</p>
+                <h3>Price:Rs 360 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Namma Uppi</h1>
+            <img src="{% static 'accounts/d32.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by Sundar Babu<br>language:kannada</p>
+                <h3>Price:Rs 194 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Daasyadunda AAchege</h1>
+            <img src="{% static 'accounts/d33.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by Puttaswamy<br>language:Kannada</p>
+                <h3>Price:Rs 200 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_height">&nbsp;</div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Playing it my way</h1>
+            <img src="{% static 'accounts/d34.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by Sachin Tendulkar<br>language:English</p>
+                <h3>Price:Rs 276 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Elon Musk</h1>
+            <img src="{% static 'accounts/d35.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by Ashlee Vance<br>language:English</p>
+                <h3>Price:Rs 392 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">The love for Physics</h1>
+            <img src="{% static 'accounts/d36.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by Walter Lewin<br>language:English</p>
+                <h3>Price:Rs 311 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_height">&nbsp;</div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Long walk to freedom</h1>
+            <img src="{% static 'accounts/d37.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by Nelson Mandela<br>language:English</p>
+                <h3>Price:Rs 409 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Ashoka</h1>
+            <img src="{% static 'accounts/d38.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by Charles Alen<br>language:English</p>
+                <h3>Price:Rs 342 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">Without Fear</h1>
+            <img src="{% static 'accounts/d39.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by Kuldip Nayar<br>language:English</p>
+                <h3>Price:Rs 186 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+        <div class="cleaner_with_height">&nbsp;</div>
+        <div class="cleaner_with_width">&nbsp;</div>
+        <div class="templatemo_product_box">
+            <h1 class="hh1">The man who knew infinity</h1>
+            <img src="{% static 'accounts/d40.jpg' %}" alt="image" />
+            <div class="product_info">
+                <p>by Robert Kanigel<br>language:English</p>
+                <h3>Price:Rs 337 </h3>
+                <div class="cart" style="display:inline;"><button class="buton">Add to cart</button></div>&nbsp;
+                <div class="quantity">quantity&nbsp;&nbsp<input name="quantity" class="quant" type="number" max="100" min="1" placeholder="1"></div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+
+        </div>
+    </div>
+    <script src="{% static 'jslink.js' %}">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}{% load static %} {% block body %}
+
+
+<div class='container'>
+    <style>
+        /* body {
+            background-image: url("{% static 'accounts/home.jpg' %}");
+        }*/
+        
+      
+        .body {
+            font-color: white;
+        }
+    </style>
+    <h1><b>Contact Us</b></h1>
+
+    <form method="POST">
+        {% csrf_token %} {{conform.as_p}}
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2 align='center'>THANK YOU FOR PROVIDING FEED</h2>
+</div>
+
+{% endblock %}
