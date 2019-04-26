@@ -1,0 +1,125 @@
+input {
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+    font-family: Verdana, Arial, san-serif;
+    font-size: 15px;
+    color: #ffffff;
+    background: #4b4743;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+#datatable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#datatable td,
+#datatable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+ ::placeholder {
+    color: white;
+}
+
+#datatable tr:nth-child(even) {
+    background-color: #6e6b68;
+}
+
+#datatable tr:hover {
+    background-color: #0f0e0d
+}
+
+#datatable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+a:link,
+a:visited {
+    color: #e6e154;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:active,
+a:hover {
+    color: #e6e154;
+    text-decoration: underline;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    width: 150px;
+    height: 200px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: orange;
+}
+
+#about {
+    color: white;
+}
+
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.topnav p {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+    background-color: blue;
+    color: white;
+}
+
+
+/* Style the "active" element to highlight the current page */
+
+.topnav a.active {
+    background-color: blue;
+    color: white;
+}
